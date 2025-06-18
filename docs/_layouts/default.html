@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+
+    <!-- Minima CSS with relative path -->
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+    <!-- RSS feed (optional) -->
+    <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}" />
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>
+        &copy; {{ site.time | date: '%Y' }} {{ site.title }} |
+        <a href="{{ site.github_username | prepend: 'https://github.com/' }}">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>
