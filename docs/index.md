@@ -1,9 +1,10 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
----
+# RCS
+```{toctree}
+:maxdepth: 2
+:caption: Contents:
+usage.md
+api.md
+```
 # Robot Control Stack
 RCS is a unified and multilayered robot control interface over a MuJoCo simulation and real world robot currently implemented for the FR3.
 ## Requirements
@@ -78,3 +79,4 @@ If the python bindings in the C++ code have changed you might need to regenerate
 ```shell
 make stubgen
 ```
+
